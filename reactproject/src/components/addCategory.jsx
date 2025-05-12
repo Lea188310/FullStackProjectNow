@@ -7,9 +7,7 @@ export const AddCategory=()=>{
  const[obj,setObj]=useState({
     "categoryName": ""
  })
-  ///פעולה שתפעיל את הפונקציה שמוסיפה לשרת
  const addToServer=async()=>{
-   
     let y=(await AddreactCategory(obj))
     if(y.data)
     alert("הצלחת")
